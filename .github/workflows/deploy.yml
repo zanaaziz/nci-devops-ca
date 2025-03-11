@@ -28,5 +28,6 @@ jobs:
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         script: |
           cd /home/ec2-user/devopsca
+          export ENV=DEV
           npm install
           pm2 restart devopsca || pm2 start bin/www --name devopsca
