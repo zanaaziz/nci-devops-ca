@@ -9,4 +9,4 @@ npm install
 
 # Restart the app with PM2 (or start it if it’s not running)
 echo "Restarting app..."
-pm2 restart devopsca || pm2 start bin/www --name devopsca
+pm2 restart devopsca --update-env || pm2 start bin/www --name devopsca
