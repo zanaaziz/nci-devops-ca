@@ -10,6 +10,21 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      # # Set up Node.js environment for testing
+      # - name: Setup Node.js for testing
+      #   uses: actions/setup-node@v4
+      #   with:
+      #     node-version: "20"
+      #     cache: "npm"
+
+      # # Install dependencies for testing
+      # - name: Install dependencies for testing
+      #   run: npm install
+
+      # # Run tests
+      # - name: Run tests
+      #   run: npm test
+
       # Copy files to EC2
       - name: Copy files to EC2
         uses: appleboy/scp-action@master
